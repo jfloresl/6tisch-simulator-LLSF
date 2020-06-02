@@ -72,6 +72,11 @@ LOG_MSF_TX_CELL_UTILIZATION       = {u'type': u'msf.tx_cell_utilization',   u'ke
 LOG_MSF_RX_CELL_UTILIZATION       = {u'type': u'msf.rx_cell_utilization',   u'keys': [u'_mote_id',u'neighbor',u'value']}
 LOG_MSF_ERROR_SCHEDULE_FULL       = {u'type': u'msf.error.schedule_full',   u'keys': [u'_mote_id']}
 
+# === LLSF
+LOG_LLSF_TX_CELL_UTILIZATION       = {u'type': u'llsf.tx_cell_utilization',   u'keys': [u'_mote_id',u'neighbor',u'value']}
+LOG_LLSF_RX_CELL_UTILIZATION       = {u'type': u'llsf.rx_cell_utilization',   u'keys': [u'_mote_id',u'neighbor',u'value']}
+LOG_LLSF_ERROR_SCHEDULE_FULL       = {u'type': u'llsf.error.schedule_full',   u'keys': [u'_mote_id']}
+
 # === sixp
 LOG_SIXP_TX                       = {u'type': u'sixp.tx',                   u'keys': [u'_mote_id',u'packet']}
 LOG_SIXP_RX                       = {u'type': u'sixp.rx',                   u'keys': [u'_mote_id',u'packet']}
