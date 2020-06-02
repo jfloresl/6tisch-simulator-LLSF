@@ -85,6 +85,12 @@ MSF_LIM_NUMCELLSUSED_LOW                    = 0.25 # in [0-1]
 MSF_HOUSEKEEPINGCOLLISION_PERIOD            = 60   # in seconds
 MSF_RELOCATE_PDRTHRES                       = 0.5  # in [0-1]
 MSF_MIN_NUM_TX                              = 100  # min number for PDR to be significant
+LLSF_MAX_NUMCELLS                            = 100
+LLSF_LIM_NUMCELLSUSED_HIGH                   = 0.75 # in [0-1]
+LLSF_LIM_NUMCELLSUSED_LOW                    = 0.25 # in [0-1]
+LLSF_HOUSEKEEPINGCOLLISION_PERIOD            = 60   # in seconds
+LLSF_RELOCATE_PDRTHRES                       = 0.5  # in [0-1]
+LLSF_MIN_NUM_TX                              = 100  # min number for PDR to be significant
 
 # === tsch
 TSCH_MIN_BACKOFF_EXPONENT                   = 1
