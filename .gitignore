@@ -1,20 +1,4 @@
-*.py[cod]
-*.so
-*.log
-*.log.*
-*.dat
-*.png
-*.eps
-*.zip
-Thumbs.db
-*.templog
-/bin/templog.txt
-/bin/simData/
-/gui/simData/
-/gui/backend/var/
-
-# pycharm
-.idea/
-.cache/
-/test-reports
-.pytest_cache
+env/**
+bin/simData/**
+gui/simData/**
+*.pyc
