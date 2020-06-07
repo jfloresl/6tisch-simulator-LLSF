@@ -415,6 +415,7 @@ class SchedulingFunctionMSF(SchedulingFunctionBase):
         return ret
 
     def get_autonomous_rx_cell(self):
+        print("aqui se uso la funcion get_autonomous_rx_cell")
         slotframe = self.mote.tsch.get_slotframe(
             self.SLOTFRAME_HANDLE_AUTONOMOUS_CELLS
         )
@@ -431,6 +432,7 @@ class SchedulingFunctionMSF(SchedulingFunctionBase):
         return ret
 
     def allocate_autonomous_rx_cell(self):
+        print("aqui se uso la funcion allocate_autonomous_rx_cell")
         mac_addr = self.mote.get_mac_addr()
         slot_offset, channel_offset = self._compute_autonomous_cell(mac_addr)
         self.mote.tsch.addCell(
@@ -442,8 +444,12 @@ class SchedulingFunctionMSF(SchedulingFunctionBase):
             ],
             slotframe_handle = self.SLOTFRAME_HANDLE_AUTONOMOUS_CELLS
         )
+        print(mac_addr)
+        print(slot_offset)
+        print(channel_offset)
 
     def get_autonomous_tx_cell(self, mac_addr):
+        print("aqui se uso la funcion get_autonomous_tx_cell")
         slotframe = self.mote.tsch.get_slotframe(
             self.SLOTFRAME_HANDLE_AUTONOMOUS_CELLS
         )
@@ -467,6 +473,7 @@ class SchedulingFunctionMSF(SchedulingFunctionBase):
         return ret
 
     def allocate_autonomous_tx_cell(self, mac_addr):
+        print("aqui se uso la funcion allocate_autonomous_tx_cell")
         slot_offset, channel_offset = self._compute_autonomous_cell(mac_addr)
         self.mote.tsch.addCell(
             slotOffset       = slot_offset,
@@ -478,8 +485,12 @@ class SchedulingFunctionMSF(SchedulingFunctionBase):
             ],
             slotframe_handle = self.SLOTFRAME_HANDLE_AUTONOMOUS_CELLS
         )
+        print(mac_addr)
+        print(slot_offset)
+        print(channel_offset)
 
     def deallocate_autonomous_tx_cell(self, mac_addr):
+        print("aqui se uso la funcion deallocate_autonomous_tx_cell")
         slot_offset, channel_offset = self._compute_autonomous_cell(mac_addr)
         self.mote.tsch.deleteCell(
             slotOffset       = slot_offset,
@@ -491,6 +502,9 @@ class SchedulingFunctionMSF(SchedulingFunctionBase):
             ],
             slotframe_handle = self.SLOTFRAME_HANDLE_AUTONOMOUS_CELLS
         )
+        print(mac_addr)
+        print(slot_offset)
+        print(channel_offset)
 
     # ======================= private ==========================================
 
