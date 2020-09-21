@@ -45,6 +45,8 @@ Simulated protocol stack
 | [RFC8480](https://tools.ietf.org/html/rfc8480)                                                               | 6TiSCH 6top Protocol (6P)                   |
 | [RFC8180](https://tools.ietf.org/html/rfc8180)                                                               | Minimal 6TiSCH Configuration                |
 | [IEEE802.15.4-2015](https://ieeexplore.ieee.org/document/7460875/)                                           | IEEE802.15.4 TSCH                           |
+| [10.1109/DCOSS.2016.10](https://github.com/vkotsiou/Scheduling/tree/master/LLSF)                             | 6TiSCH Low Latency Scheduling Function (LLSF)|
+
 
 * connectivity models
     * Pister-hack
